@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<!--This is the Title and link to my CSS-->
+<head>
+  <title>Laura's Homepage</title>
+  <link rel="stylesheet" href="WebpageStyle.css">
+  
+<!-- This is my Hide and Display Pic Function-->
+  <script>
+    function myPicDisplayFunction() {
+    var x = document.getElementById("myPicDiv");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            document.getElementById("PicButton").innerHTML = "Display Profile Image";
+        } else {
+            x.style.display = "block";
+            document.getElementById("PicButton").innerHTML = "Hide Profile Image";
+        }
+    }
+
+  </script>
+
+</head>
+
+<!--These are internal style tags for my header and paragraph-->
+<style>
+
+    div {
+    margin-top: 15px;
+    font-size: 48px;
+    animation: fadeInAnimation ease 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+    }
+
+    /* This is the animation for my paragraph*/
+    @keyframes fadeInAnimation {
+                    0% {
+                        opacity: 0;
+                    }
+        
+                    100% {
+                        opacity: 1;
+                    }
+                }
+</style>
+
+<body>
+
+<!--This is the content for my Nav Bar-->
+    <ul>
+        <li><a href="ContactPage.html">Contact Laura</a></li>
+        <li><a href="AboutPage.html">About Page</a></li>
+        <li><a href="HomePage.html">Home</a></li>
+    </ul>
+    
+    <br>    <br>    <br>    <br>
+
+<!--This is my header--> 
+
+<!--
+    <h1>
+        About the Author:
+    </h1>
+-->
+
+
+<!--This is how I seperate my paragraphs into 2 vertical sections-->
+    <div style="width: 80%; padding-left: 150px; margin-left: 25px; margin-top: 0px;">
+
+<!--This is the first section thats on the left side-->
+        <div style="
+            font-size: 28px;
+            width: 55%;  
+            float: left;
+            margin: 10px; ">
+
+                <p style="font-size: 40px; font-style: bold;">
+                    
+                    <img src="KSUowl.jpg" alt="KSU Owl Image" style="height: 70px; width: 60px;">
+                    I'm Laura, a senior <br> 
+                    student at Kennesaw University!</b>
+                    <br>
+                </p>
+
+                <!--This is the Hide & Show, initially picture is hidden-->
+                <button id="PicButton" onclick="myPicDisplayFunction()">Display Profile Image</button>
+
+                <div id="myPicDiv" style="display: none;">
+                    <img src="LauraPic.jpg" alt="Laura Image" style="height: 230px; width: 350px;"> <br>
+                </div>
+
+
+
+
+                This Fall should be my last semester and I couldn't be more nervous
+                and excited to see where this degree takes me. <br>
+                I just transferred from Chattahooche Tech where I graduated <br>
+                with my Degree in Computer Programming.
+                <br><br>
+ 
+                My goals are to be able to use my degree to get a job in software testing. <br>
+                Fortunatley, my whole family is in IT ,so it has been easy to see what jobs are available. <br>
+                As soon as I land a solid career, I will then teach my boyfriend the tricks of the trade and <br>
+                ,hopefully, level up his carreer aswell. 
+                <br><br>
+ 
+                Out of all the classes I have taken, I really like how creative you can get with Web Development. <br>
+                Take a look at my menu to the right to see all the programing languages I've learned so far! <br>
+
+<!--This is the second section thats on the right side-->
+        </div>
+            <div style="
+            margin-left: 30%; 
+            height: 100px; 
+            font-size: 20px;"> 
+                <br><br>
+                <b> Languages I've Learned: </b><br>
+                Java <br>
+                Python <br>
+                SQL <br><br>
+
+                <b> Colleges I've been to: </b><br>
+                Pasco Hernando Communtiy College <br>
+                Tallahasse Community College <br>
+                Chattahooche Tech College<br>
+                Kennesaw State University <br><br>
+
+                <b> Languages I've Learned: </b><br>
+                Java <br>
+                Python <br>
+                SQL <br><br>
+
+            </div>
+    </div>
+
+
+       
+  
+   
+  </body>
+  </html>
+  

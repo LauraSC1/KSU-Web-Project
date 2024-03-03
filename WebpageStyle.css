@@ -1,0 +1,42 @@
+/* Backround Color */
+body {
+    background-color: rgb(255, 255, 255);
+    }
+
+/* Inline Nav Bar */
+li {
+    display: inline;
+  }
+
+/* Block Nav Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  /* This is how the block nav bar is on the right */
+  li {
+    float: right;
+  }
+  
+  /* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  /* Style for inside the block nav bar*/
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
